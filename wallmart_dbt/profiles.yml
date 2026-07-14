@@ -1,0 +1,11 @@
+wallmart_dbt:
+  outputs:
+    dev:
+      catalog: wallmart
+      host: dbc-c44b4dd7-5f31.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/aa3060b762547029
+      schema: default
+      threads: 1
+      token: "{{ env_var('DATABRICKS_API_KEY') }}"
+      type: databricks
+  target: dev
