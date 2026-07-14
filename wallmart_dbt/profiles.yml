@@ -6,6 +6,6 @@ wallmart_dbt:
       http_path: /sql/1.0/warehouses/aa3060b762547029
       schema: default
       threads: 1
-      token: "{{ env_var('DATABRICKS_API_KEY') }}"
+      token: "{{ env_var('DATBRICKS_API_KEY') }}"
       type: databricks
   target: dev
