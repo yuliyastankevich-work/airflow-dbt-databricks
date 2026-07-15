@@ -38,4 +38,9 @@ models:
     silver:
       +materialized: table
       +schema: silver_b
+    gold:
+      +materialized: table
+      +schema: gold
+      ephemeral:
+        +materialized: ephemeral
 
