@@ -11,7 +11,7 @@
                 o.updated_timestamp as order_updated_timestamp,
                 o.is_active as order_is_active,
                 o.processed_at as order_processed_at,
-                CURRENT_TIMESTAMP() as obt_b_processed at""",
+                CURRENT_TIMESTAMP() as obt_b_processed_at""",
     "alias": "o",
     },
 

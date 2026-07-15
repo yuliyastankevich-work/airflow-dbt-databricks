@@ -5,7 +5,7 @@ SELECT *,
 FROM
 {{ source("wallmart_databricks", "order_items")}}
 
-
+WHERE
 {% if is_incremental() %}
-    AND updated_timestamp > (SELECT COALESCE(MAX(updated_timestamp), '1200-01-01') FROM {{ this }})
+    updated_timestamp > (SELECT COALESCE(MAX(updated_timestamp), '1200-01-01') FROM {{ this }})
 {% endif %}

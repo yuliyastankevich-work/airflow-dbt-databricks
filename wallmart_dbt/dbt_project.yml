@@ -35,3 +35,7 @@ models:
     silver_tech:
       +materialized: table
       +schema: silver_tech
+    silver:
+      +materialized: table
+      +schema: silver_b
+
